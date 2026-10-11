@@ -12,7 +12,7 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 <img width="1920" height="1080" alt="Screenshot" src="https://github.com/Shedou/ChimbaBenchCL/blob/main/Screenshot.jpg" />
 
 ## System requirements:
-- OS: 64-bit - Windows 7+, Linux (GLIBC 2.7+), FreeBSD
+- OS: 64-bit (x86_64) - Windows 7+, Linux (GLIBC 2.7+), FreeBSD
 - GPU: 512 MB+ (GeForce 8000+ and Radeon HD 4000+)
 - API: OpenCL 1.0+
 
