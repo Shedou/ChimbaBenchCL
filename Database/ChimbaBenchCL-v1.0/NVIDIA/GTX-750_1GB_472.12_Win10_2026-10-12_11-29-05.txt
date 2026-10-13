@@ -1,0 +1,48 @@
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : NVIDIA GeForce GTX 750 (GPU)
+ CL Info   : OpenCL 3.0 CUDA
+ HW Info   : CUs: 4, Mem: 1.00 GB (1024 MB), Freq (base): 1084 MHz
+ Cache Info: Cache Size: 96 KB, Line Size: 128 Bytes
+ Platform  : NVIDIA CUDA (472.12)
+ [System]  : Workload dynamically set to 524288 elements based on 4 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :   55.55 GB/s -   52.20 GB/s -   57.55 GB/s - 96.5%
+     64 MB :   59.25 GB/s -   57.79 GB/s -   60.33 GB/s - 98.2%
+    256 MB :   61.26 GB/s -   58.59 GB/s -   63.43 GB/s - 96.6%
+    512 MB :   63.50 GB/s -   62.95 GB/s -   63.80 GB/s - 99.5%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     318.68 ns     [   1.59s, Hops: 5000000, 64 MB]
+ FP16-H8   : Compilation/Buffer error (-45).
+ FP32-F8   :    1119.75 GFLOPS (   1.12 TFLOPS) [1.49s, Iters.:   99381]
+ FP32-FMA  :    1120.38 GFLOPS (   1.12 TFLOPS) [1.50s, Iters.:  100013]
+ FP64-D4   :      36.98 GFLOPS (   0.04 TFLOPS) [1.41s, Iters.:  199091]
+ INT8-U16  :     418.87 GIOPS  (   0.42 TIOPS ) [1.49s, Iters.:   18599]
+ INT32-I4  :     421.92 GIOPS  (   0.42 TIOPS ) [1.50s, Iters.:  100567]
+ INT64-L2  :      76.02 GIOPS  (   0.08 TIOPS ) [1.49s, Iters.:   72242]
+ Img Blur  :   29403.91 MP/s   (  29.40 GP/s  ) [1.46s, Iters.:   20675]
+
+ List of OpenCL Device Extensions:
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_fp64
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_icd
+cl_khr_gl_sharing
+cl_nv_compiler_options
+cl_nv_device_attribute_query
+cl_nv_pragma_unroll
+cl_nv_d3d10_sharing
+cl_khr_d3d10_sharing
+cl_nv_d3d11_sharing
+cl_nv_copy_opts
+cl_nv_create_buffer
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_device_uuid
+cl_khr_pci_bus_info

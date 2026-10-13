@@ -1,0 +1,58 @@
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : Ellesmere (GPU)
+ CL Info   : OpenCL 2.0 AMD-APP (3240.6)
+ HW Info   : CUs: 32, Mem: 4.00 GB (4096 MB), Freq (base): 1256 MHz
+ Cache Info: Cache Size: 16 KB, Line Size: 64 Bytes
+ Platform  : AMD Accelerated Parallel Processing (3240.6)
+ [System]  : Workload dynamically set to 4194304 elements based on 32 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  154.77 GB/s -  149.37 GB/s -  160.09 GB/s - 96.7%
+     64 MB :  168.36 GB/s -  166.11 GB/s -  170.02 GB/s - 99.0%
+    256 MB :  170.89 GB/s -  170.09 GB/s -  171.62 GB/s - 99.6%
+    512 MB :  171.71 GB/s -  171.20 GB/s -  172.98 GB/s - 99.3%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     320.95 ns     [   1.49s, Hops: 4631871, 64 MB]
+ FP16-H8   :    4072.16 GFLOPS (   4.07 TFLOPS) [1.49s, Iters.:   45352]
+ FP32-F8   :    2545.24 GFLOPS (   2.55 TFLOPS) [1.49s, Iters.:   28324]
+ FP32-FMA  :    1163.77 GFLOPS (   1.16 TFLOPS) [1.49s, Iters.:   12951]
+ FP64-D4   :     203.64 GFLOPS (   0.20 TFLOPS) [1.50s, Iters.:   18168]
+ INT8-U16  :    2454.59 GIOPS  (   2.45 TIOPS ) [0.04s, Iters.:     384]
+ INT32-I4  :     602.46 GIOPS  (   0.60 TIOPS ) [0.03s, Iters.:     379]
+ INT64-L2  :     337.25 GIOPS  (   0.34 TIOPS ) [0.03s, Iters.:     763]
+ Img Blur  :   49919.96 MP/s   (  49.92 GP/s  ) [1.50s, Iters.:   36000]
+
+ List of OpenCL Device Extensions:
+cl_khr_fp64
+cl_amd_fp64
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_fp16
+cl_khr_gl_sharing
+cl_khr_gl_depth_images
+cl_amd_device_attribute_query
+cl_amd_vec3
+cl_amd_printf
+cl_amd_media_ops
+cl_amd_media_ops2
+cl_amd_popcnt
+cl_khr_d3d10_sharing
+cl_khr_d3d11_sharing
+cl_khr_dx9_media_sharing
+cl_khr_image2d_from_buffer
+cl_khr_spir
+cl_khr_subgroups
+cl_khr_gl_event
+cl_khr_depth_images
+cl_khr_mipmap_image
+cl_khr_mipmap_image_writes
+cl_amd_liquid_flash
+cl_amd_planar_yuv
