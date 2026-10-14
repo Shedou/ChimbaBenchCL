@@ -93,11 +93,34 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 const char *ProjectName = "ChimbaBenchCL v1.1a (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
 const char *ProjectLicense = "MIT License - (c) 2026 Андрей Цымбалов (Chimbal)\n";
 
+void help_function() {
+	printf(ProjectName);
+	printf(ProjectLicense);
+	printf("\nTo disable the CPU/GPU, use the following arguments:\n");
+	printf("-disable-cpu: Skip CPU testing.\n");
+	printf("-disable-gpu: Skip testing on all GPUs.\n");
+	printf("-disable-gpu-amd: Skip testing on AMD GPUs only.\n");
+	printf("-disable-gpu-intel: Skip testing on Intel GPUs only.\n");
+	printf("-disable-gpu-nvidia: Skip testing on NVIDIA GPUs only.\n");
+	printf("\nPress Enter to exit.\n");
+	char c; scanf("%c", &c); // Pause...
+	exit(0); // Закрывает программу без возврата к функции main()...
+}
+
 int main(int argc, char* argv[]) {
     #ifdef _WIN32 // UTF-8 кодировка для консоли Windows
         SetConsoleOutputCP(65001);
         SetConsoleCP(65001);
     #endif
+    
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-help") == 0 || strcmp(argv[i], "--help") == 0) { help_function(); } // Вызвав функцию справки назад дороги нет...
+        if (strcmp(argv[i], "-disable-cpu") == 0) { disable_cpu = 1; }
+        if (strcmp(argv[i], "-disable-gpu") == 0) { disable_gpu = 1; }
+        if (strcmp(argv[i], "-disable-gpu-intel") == 0) { disable_gpu_intel = 1; }
+        if (strcmp(argv[i], "-disable-gpu-amd") == 0) { disable_gpu_amd = 1; }
+        if (strcmp(argv[i], "-disable-gpu-nvidia") == 0) { disable_gpu_nvidia = 1; }
+    }
     
     create_directory_if_not_exists("Results"); // Проверка каталога и его создание при отсутствии
     
@@ -118,14 +141,6 @@ int main(int argc, char* argv[]) {
     
     print_report(ProjectName);
     print_report(ProjectLicense);
-    
-    for (int i = 1; i < argc; i++) {
-        if (strcmp(argv[i], "-disable-cpu") == 0) { disable_cpu = 1; }
-        if (strcmp(argv[i], "-disable-gpu") == 0) { disable_gpu = 1; }
-        if (strcmp(argv[i], "-disable-gpu-intel") == 0) { disable_gpu_intel = 1; }
-        if (strcmp(argv[i], "-disable-gpu-amd") == 0) { disable_gpu_amd = 1; }
-        if (strcmp(argv[i], "-disable-gpu-nvidia") == 0) { disable_gpu_nvidia = 1; }
-    }
     
     cl_uint num_platforms;
     cl_int ret = clGetPlatformIDs(0, NULL, &num_platforms);
