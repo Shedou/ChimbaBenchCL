@@ -76,12 +76,21 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 #endif
 // -------------------------- //
 
+//        общие флаги        //
+    int disable_gpu_intel = 0;
+    int disable_gpu_amd = 0;
+    int disable_gpu_nvidia = 0;
+    int disable_cpu = 0;
+    int disable_gpu = 0;
+
+// ------------------------- //
+
 // Основной код находится в следующих файлах //
 #include "file.c"
 #include "benchmarks.c"
 // ----------------------------------------  //
 
-const char *ProjectName = "ChimbaBenchCL v1.0 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
+const char *ProjectName = "ChimbaBenchCL v1.1a (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
 const char *ProjectLicense = "MIT License - (c) 2026 Андрей Цымбалов (Chimbal)\n";
 
 int main(int argc, char* argv[]) {
@@ -89,9 +98,6 @@ int main(int argc, char* argv[]) {
         SetConsoleOutputCP(65001);
         SetConsoleCP(65001);
     #endif
-    
-    print_report(ProjectName);
-    print_report(ProjectLicense);
     
     create_directory_if_not_exists("Results"); // Проверка каталога и его создание при отсутствии
     
@@ -106,15 +112,19 @@ int main(int argc, char* argv[]) {
     
     if (report_file == NULL) {
         printf("Warning: Failed to create the report file %s\n", filename);
-    } else {
+    }/* else {
         printf("The results will be saved to a file: %s\n", filename);
-    }
+    }*/
     
-    int force_intel = 0;
+    print_report(ProjectName);
+    print_report(ProjectLicense);
+    
     for (int i = 1; i < argc; i++) {
-        if (strcmp(argv[i], "-enable-intel") == 0) {
-            force_intel = 1;
-        }
+        if (strcmp(argv[i], "-disable-cpu") == 0) { disable_cpu = 1; }
+        if (strcmp(argv[i], "-disable-gpu") == 0) { disable_gpu = 1; }
+        if (strcmp(argv[i], "-disable-gpu-intel") == 0) { disable_gpu_intel = 1; }
+        if (strcmp(argv[i], "-disable-gpu-amd") == 0) { disable_gpu_amd = 1; }
+        if (strcmp(argv[i], "-disable-gpu-nvidia") == 0) { disable_gpu_nvidia = 1; }
     }
     
     cl_uint num_platforms;
@@ -141,7 +151,7 @@ int main(int argc, char* argv[]) {
         clGetDeviceIDs(platforms[i], CL_DEVICE_TYPE_ALL, num_devices, devices, NULL);
         
         for (cl_uint j = 0; j < num_devices; j++) {
-            benchmark_device(devices[j], platform_name, force_intel);
+            benchmark_device(devices[j], platform_name);
         }
         free(devices);
     }

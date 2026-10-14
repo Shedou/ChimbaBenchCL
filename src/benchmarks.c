@@ -56,7 +56,7 @@ int calibrate_kernel_iterations(cl_command_queue command_queue, cl_kernel kernel
 }
 
 // Функция тестирования
-void benchmark_device(cl_device_id device_id, const char* platform_name, int force_intel) {
+void benchmark_device(cl_device_id device_id, const char* platform_name) {
     cl_int ret;
     
     // Сбор базовой информации о тестируемом устройстве
@@ -98,20 +98,45 @@ void benchmark_device(cl_device_id device_id, const char* platform_name, int for
     print_report(" Cache Info: Cache Size: %lld KB, Line Size: %d Bytes\n", cache_size / 1024, cacheline_size);
     print_report(" Platform  : %s (%s)\n", platform_name, driver_version);
     
-    // Проверка, предотвращающая баги или зависание при тестировании Intel GPU.
-    if (strstr(platform_name, "Intel") != NULL || strstr(device_name, "Intel(R)") != NULL) {
+    // Проверки, позволяющие проигнорировать CPU/GPU во время теста. Помогает в случаях неправильной работы устройств.
+    // В ходе проверки на встроенной Intel(R) UHD 600 выяснилось, что OpenCL-тесты не работают в среде Linux (в том числе сторонние, вроде clpeak).
+    // Так как Intel UHD 630 была успешно протестирована, старая логика потеряла смысл, и теперь аргументы работают на блокировку, а не разрешение.
+    if (disable_cpu) {
+        if (is_cpu) {
+            print_report(" CPU disabled: skipping.\n");
+            free(extensions); 
+            return;
+        }
+    }
+    
+    if (disable_gpu) {
         if (!is_cpu) {
-            // В ходе проверки на встроенной Intel(R) UHD 600 выяснилось, что тесты не работают в среде Linux.
-            // В среде Windows нет возможности протестировать данную графику, поэтому Intel GPU пока отключаем по умолчанию.
-            
-            // Если флаг форсирования НЕ передан, то пропускаем устройство
-            if (!force_intel) {
-                print_report(" Intel iGPU/GPU detected (bugs): skipping.\n");
-                print_report(" Use the \"-enable-intel\" parameter to run the test on the GPU.\n");
+            print_report(" GPU disabled: skipping.\n");
+            free(extensions); 
+            return;
+        }
+    }
+    
+    if (!is_cpu) {
+        if (strstr(platform_name, "Intel") != NULL || strstr(device_name, "Intel(R)") != NULL) {
+            if (disable_gpu_intel) {
+                print_report(" Intel iGPU/GPU disabled: skipping.\n");
                 free(extensions); 
                 return;
-            } else {
-                print_report(" [Warning] Intel iGPU forced via parameter. Results may be unstable.\n");
+            }
+        }
+        if (strstr(platform_name, "AMD") != NULL || strstr(device_name, "Radeon") != NULL) {
+            if (disable_gpu_amd) {
+                print_report(" AMD iGPU/GPU disabled: skipping.\n");
+                free(extensions); 
+                return;
+            }
+        }
+        if (strstr(platform_name, "NVIDIA") != NULL || strstr(device_name, "GeForce") != NULL) {
+            if (disable_gpu_nvidia) {
+                print_report(" NVIDIA GPU disabled: skipping.\n");
+                free(extensions); 
+                return;
             }
         }
     }
