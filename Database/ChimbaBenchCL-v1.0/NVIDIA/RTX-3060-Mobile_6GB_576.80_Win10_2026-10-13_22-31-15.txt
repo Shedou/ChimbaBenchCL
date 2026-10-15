@@ -1,0 +1,53 @@
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : NVIDIA GeForce RTX 3060 Laptop GPU (GPU)
+ CL Info   : OpenCL 3.0 CUDA
+ HW Info   : CUs: 30, Mem: 6.00 GB (6144 MB), Freq (base): 1425 MHz
+ Cache Info: Cache Size: 840 KB, Line Size: 128 Bytes
+ Platform  : NVIDIA CUDA (576.80)
+ [System]  : Workload dynamically set to 3932160 elements based on 30 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  258.49 GB/s -  182.36 GB/s -  273.92 GB/s - 94.4%
+     64 MB :  302.52 GB/s -  287.52 GB/s -  304.82 GB/s - 99.2%
+    256 MB :  313.02 GB/s -  312.10 GB/s -  313.57 GB/s - 99.8%
+    512 MB :  314.40 GB/s -  311.55 GB/s -  315.08 GB/s - 99.8%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     273.44 ns     [   1.37s, Hops: 5000000, 64 MB]
+ FP16-H8   :   15376.99 GFLOPS (  15.38 TFLOPS) [1.51s, Iters.:  184004]
+ FP32-F8   :   13759.59 GFLOPS (  13.76 TFLOPS) [1.49s, Iters.:  163363]
+ FP32-FMA  :   13751.58 GFLOPS (  13.75 TFLOPS) [1.49s, Iters.:  163345]
+ FP64-D4   :     201.72 GFLOPS (   0.20 TFLOPS) [1.50s, Iters.:   19229]
+ INT8-U16  :   54536.61 GIOPS  (  54.54 TIOPS ) [1.50s, Iters.:  324625]
+ INT32-I4  :    9284.00 GIOPS  (   9.28 TIOPS ) [1.56s, Iters.:  305956]
+ INT64-L2  :    2265.19 GIOPS  (   2.27 TIOPS ) [1.55s, Iters.:  297353]
+ Img Blur  :  359198.00 MP/s   ( 359.20 GP/s  ) [1.48s, Iters.:  256125]
+
+ List of OpenCL Device Extensions:
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_fp64
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_icd
+cl_khr_gl_sharing
+cl_nv_compiler_options
+cl_nv_device_attribute_query
+cl_nv_pragma_unroll
+cl_nv_d3d10_sharing
+cl_khr_d3d10_sharing
+cl_nv_d3d11_sharing
+cl_nv_copy_opts
+cl_nv_create_buffer
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_device_uuid
+cl_khr_pci_bus_info
+cl_khr_external_semaphore
+cl_khr_external_memory
+cl_khr_external_semaphore_win32
+cl_khr_external_memory_win32
+cl_khr_semaphore

@@ -1,0 +1,91 @@
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : Intel(R) UHD Graphics (GPU)
+ CL Info   : OpenCL 3.0 NEO 
+ HW Info   : CUs: 24, Mem: 25.53 GB (26146 MB), Freq (base): 1200 MHz
+ Cache Info: Cache Size: 768 KB, Line Size: 64 Bytes
+ Platform  : Intel(R) OpenCL HD Graphics (31.0.101.2134)
+ [Warning] Intel iGPU forced via parameter. Results may be unstable.
+ [System]  : Workload dynamically set to 3145728 elements based on 24 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :   27.67 GB/s -   19.41 GB/s -   31.10 GB/s - 89.0%
+     64 MB :   23.55 GB/s -   19.90 GB/s -   24.87 GB/s - 94.7%
+    256 MB :   24.34 GB/s -   23.17 GB/s -   24.80 GB/s - 98.2%
+    512 MB :   24.48 GB/s -   23.07 GB/s -   24.67 GB/s - 99.2%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     291.55 ns     [   1.46s, Hops: 5000000, 64 MB]
+ FP16-H8   :     607.66 GFLOPS (   0.61 TFLOPS) [1.45s, Iters.:    8778]
+ FP32-F8   :     425.64 GFLOPS (   0.43 TFLOPS) [1.46s, Iters.:    6173]
+ FP32-FMA  :     425.43 GFLOPS (   0.43 TFLOPS) [1.46s, Iters.:    6156]
+ FP64-D4   :      69.92 GFLOPS (   0.07 TFLOPS) [1.44s, Iters.:    7979]
+ INT8-U16  :     152.82 GIOPS  (   0.15 TIOPS ) [1.38s, Iters.:    1047]
+ INT32-I4  :     158.29 GIOPS  (   0.16 TIOPS ) [1.46s, Iters.:    6120]
+ INT64-L2  :      25.36 GIOPS  (   0.03 TIOPS ) [1.46s, Iters.:    3924]
+ Img Blur  :    8919.61 MP/s   (   8.92 GP/s  ) [1.48s, Iters.:    6362]
+
+ List of OpenCL Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_fp16
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_icd
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_intel_command_queue_families
+cl_intel_subgroups
+cl_intel_required_subgroup_size
+cl_intel_subgroups_short
+cl_khr_spir
+cl_intel_accelerator
+cl_intel_driver_diagnostics
+cl_khr_priority_hints
+cl_khr_throttle_hints
+cl_khr_create_command_queue
+cl_intel_subgroups_char
+cl_intel_subgroups_long
+cl_khr_il_program
+cl_intel_mem_force_host_memory
+cl_khr_subgroup_extended_types
+cl_khr_subgroup_non_uniform_vote
+cl_khr_subgroup_ballot
+cl_khr_subgroup_non_uniform_arithmetic
+cl_khr_subgroup_shuffle
+cl_khr_subgroup_shuffle_relative
+cl_khr_subgroup_clustered_reduce
+cl_intel_device_attribute_query
+cl_khr_suggested_local_work_size
+cl_intel_split_work_group_barrier
+cl_khr_fp64
+cl_khr_subgroups
+cl_intel_spirv_device_side_avc_motion_estimation
+cl_intel_spirv_media_block_io
+cl_intel_spirv_subgroups
+cl_khr_spirv_no_integer_wrap_decoration
+cl_intel_unified_shared_memory
+cl_khr_mipmap_image
+cl_khr_mipmap_image_writes
+cl_intel_planar_yuv
+cl_intel_packed_yuv
+cl_intel_motion_estimation
+cl_intel_device_side_avc_motion_estimation
+cl_intel_advanced_motion_estimation
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_image2d_from_buffer
+cl_khr_depth_images
+cl_khr_3d_image_writes
+cl_intel_media_block_io
+cl_khr_gl_sharing
+cl_khr_gl_depth_images
+cl_khr_gl_event
+cl_khr_gl_msaa_sharing
+cl_intel_dx9_media_sharing
+cl_khr_dx9_media_sharing
+cl_khr_d3d10_sharing
+cl_khr_d3d11_sharing
+cl_intel_d3d11_nv12_media_sharing
+cl_intel_sharing_format_query
+cl_khr_pci_bus_info
+cl_intel_simultaneous_sharing

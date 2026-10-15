@@ -1,0 +1,38 @@
+OpenCL platforms detected: 3
+
+================================================================================
+ Device    : pthread-haswell-Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz (CPU)
+ CL Info   : OpenCL 3.0 PoCL HSTR: pthread-x86_64-pc-linux-gnu-haswell
+ HW Info   : CUs: 16, Mem: 60.64 GB (62090 MB), Freq (base): 2301 MHz
+ Cache Info: Cache Size: 16384 KB, Line Size: 64 Bytes
+ Platform  : Portable Computing Language (3.1+debian)
+ [System]  : Workload dynamically set to 1048576 elements based on 16 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :   85.56 GB/s -   21.01 GB/s -  152.11 GB/s - 56.2%
+     64 MB :   42.84 GB/s -   27.37 GB/s -   48.52 GB/s - 88.3%
+    256 MB :   35.15 GB/s -   33.57 GB/s -   36.48 GB/s - 96.4%
+    512 MB :   34.24 GB/s -   32.71 GB/s -   35.29 GB/s - 97.0%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :      73.63 ns     [   0.37s, Hops: 5000000, 64 MB]
+ FP16-H8   : Skipped (Extension not supported).
+ FP32-F8   :     242.91 GFLOPS (   0.24 TFLOPS) [1.56s, Iters.:   11305]
+ FP32-FMA  :     241.98 GFLOPS (   0.24 TFLOPS) [1.50s, Iters.:   10824]
+ FP64-D4   :     120.64 GFLOPS (   0.12 TFLOPS) [1.53s, Iters.:   43999]
+ INT8-U16  :     729.69 GIOPS  (   0.73 TIOPS ) [1.44s, Iters.:   15672]
+ INT32-I4  :      63.46 GIOPS  (   0.06 TIOPS ) [1.61s, Iters.:    8132]
+ INT64-L2  :      29.13 GIOPS  (   0.03 TIOPS ) [1.48s, Iters.:   13669]
+ Img Blur  :    2475.28 MP/s   (   2.48 GP/s  ) [1.80s, Iters.:    2153]
+
+ List of OpenCL Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_3d_image_writes
+cl_khr_command_buffer
+cl_khr_spir
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_fp64
