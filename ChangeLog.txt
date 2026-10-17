@@ -1,0 +1,15 @@
+-= ChimbaBenchCL v1.1 =-
+Compiled: 2026-10-17
+Original binaries MD5 Hash:
+ChimbaBenchCL.exe - effddfab622a47e5bac4fd85325ec648
+ChimbaBenchCL-FBSD - 8ba1ec1d77d7219b2ff3f18a96f0948c
+ChimbaBenchCL-Linux - d997b7ee1e8d391ea6041d746e37ec58
+- Intel GPU теперь тестируются наравне с прочими (аргумент -enable-intel удалён).
+- Добавлены аргументы -disable-cpu* и -disable-gpu*, позволяющие проигнорировать устройства при тестировании.
+- Добавлена функция краткой справки (-help / --help).
+- Тест FP32-FMA разделён на FP32-FMA и FP32-MAD.
+- Имя и версия проекта теперь записывается в файл результата.
+- Обновлены и усовершенствованы скрипты компиляции.
+
+-= ChimbaBenchCL v1.0 =-
+- Первая версия.
