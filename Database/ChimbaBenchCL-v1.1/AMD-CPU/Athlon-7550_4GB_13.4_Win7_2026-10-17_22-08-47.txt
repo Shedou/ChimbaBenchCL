@@ -1,0 +1,47 @@
+ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : AMD Athlon(tm) 7550 Dual-Core Processor (CPU)
+ CL Info   : OpenCL 1.2 AMD-APP (937.2)
+ HW Info   : CUs: 2, Mem: 4.00 GB (4095 MB), Freq (base): 2499 MHz
+ Cache Info: Cache Size: 64 KB, Line Size: 64 Bytes
+ Platform  : AMD Accelerated Parallel Processing (2.0 (sse2))
+ [System]  : Workload dynamically set to 262144 elements based on 2 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :    3.70 GB/s -    3.58 GB/s -    3.77 GB/s - 98.0%
+     64 MB :    3.75 GB/s -    3.54 GB/s -    3.78 GB/s - 99.1%
+    256 MB :    3.72 GB/s -    3.27 GB/s -    3.78 GB/s - 98.4%
+    512 MB :    3.69 GB/s -    3.28 GB/s -    3.77 GB/s - 98.0%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     112.53 ns     [   0.56s, Hops: 5000000, 64 MB]
+ FP16-H8   : Skipped (Extension not supported).
+ FP32-F8   :       9.85 GFLOPS (   0.01 TFLOPS) [0.96s, Iters.:    1133]
+ FP32-FMA  :       0.71 GFLOPS (   0.00 TFLOPS) [1.35s, Iters.:     114]
+ FP32-MAD  :       9.86 GFLOPS (   0.01 TFLOPS) [0.83s, Iters.:     979]
+ FP64-D4   :       4.97 GFLOPS (   0.00 TFLOPS) [1.37s, Iters.:    6488]
+ INT8-U16  :       3.96 GIOPS  (   0.00 TIOPS ) [1.14s, Iters.:     268]
+ INT32-I4  :       1.74 GIOPS  (   0.00 TIOPS ) [1.13s, Iters.:     627]
+ INT64-L2  :       1.86 GIOPS  (   0.00 TIOPS ) [1.42s, Iters.:    3346]
+ Img Blur  :     148.14 MP/s   (   0.15 GP/s  ) [1.08s, Iters.:      77]
+
+ List of OpenCL Device Extensions:
+cl_khr_fp64
+cl_amd_fp64
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_byte_addressable_store
+cl_khr_gl_sharing
+cl_ext_device_fission
+cl_amd_device_attribute_query
+cl_amd_vec3
+cl_amd_printf
+cl_amd_media_ops
+cl_amd_popcnt
+cl_khr_d3d10_sharing

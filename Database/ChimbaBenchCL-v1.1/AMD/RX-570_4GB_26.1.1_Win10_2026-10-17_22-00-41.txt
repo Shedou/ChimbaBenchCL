@@ -1,0 +1,59 @@
+ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : Ellesmere (GPU)
+ CL Info   : OpenCL 2.0 AMD-APP (3584.0)
+ HW Info   : CUs: 32, Mem: 4.00 GB (4096 MB), Freq (base): 1256 MHz
+ Cache Info: Cache Size: 16 KB, Line Size: 64 Bytes
+ Platform  : AMD Accelerated Parallel Processing (3584.0 (PAL,HSAIL))
+ [System]  : Workload dynamically set to 4194304 elements based on 32 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  154.77 GB/s -  144.04 GB/s -  162.07 GB/s - 95.5%
+     64 MB :  167.87 GB/s -  164.10 GB/s -  169.81 GB/s - 98.9%
+    256 MB :  171.08 GB/s -  169.67 GB/s -  171.90 GB/s - 99.5%
+    512 MB :  171.74 GB/s -  170.10 GB/s -  172.45 GB/s - 99.6%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     323.23 ns     [   1.50s, Hops: 4627116, 64 MB]
+ FP16-H8   :    4064.23 GFLOPS (   4.06 TFLOPS) [1.50s, Iters.:   45357]
+ FP32-F8   :    2540.29 GFLOPS (   2.54 TFLOPS) [1.50s, Iters.:   28342]
+ FP32-FMA  :    1163.77 GFLOPS (   1.16 TFLOPS) [1.49s, Iters.:   12950]
+ FP32-MAD  :    2545.25 GFLOPS (   2.55 TFLOPS) [1.49s, Iters.:   28342]
+ FP64-D4   :     203.64 GFLOPS (   0.20 TFLOPS) [1.50s, Iters.:   18180]
+ INT8-U16  :    2455.37 GIOPS  (   2.46 TIOPS ) [0.04s, Iters.:     402]
+ INT32-I4  :     666.82 GIOPS  (   0.67 TIOPS ) [0.03s, Iters.:     400]
+ INT64-L2  :     337.58 GIOPS  (   0.34 TIOPS ) [0.03s, Iters.:     804]
+ Img Blur  :   49801.99 MP/s   (  49.80 GP/s  ) [1.50s, Iters.:   36012]
+
+ List of OpenCL Device Extensions:
+cl_khr_fp64
+cl_amd_fp64
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_fp16
+cl_khr_gl_sharing
+cl_amd_device_attribute_query
+cl_amd_vec3
+cl_amd_printf
+cl_amd_media_ops
+cl_amd_media_ops2
+cl_amd_popcnt
+cl_khr_d3d10_sharing
+cl_khr_d3d11_sharing
+cl_khr_dx9_media_sharing
+cl_khr_image2d_from_buffer
+cl_khr_subgroups
+cl_khr_gl_event
+cl_khr_depth_images
+cl_khr_mipmap_image
+cl_khr_mipmap_image_writes
+cl_amd_copy_buffer_p2p
+cl_amd_planar_yuv
