@@ -90,7 +90,7 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 #include "benchmarks.c"
 // ----------------------------------------  //
 
-const char *ProjectName = "ChimbaBenchCL v1.1a (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
+const char *ProjectName = "ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
 const char *ProjectLicense = "MIT License - (c) 2026 Андрей Цымбалов (Chimbal)\n";
 
 void help_function() {
