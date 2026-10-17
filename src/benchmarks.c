@@ -199,7 +199,7 @@ void benchmark_device(cl_device_id device_id, const char* platform_name) {
     #include "bench_latency.c"
     #include "bench_fp16_h8.c"
     #include "bench_fp32_f8.c"
-    #include "bench_fp32_fma.c"
+    #include "bench_fp32_fmads.c"
     #include "bench_fp64.c"
     #include "bench_int8_u16.c"
     #include "bench_int32.c"
