@@ -16,22 +16,34 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 - GPU: 512 MB+ (GeForce 8000+ / Radeon HD 4000+ / Intel Gen7+)
 - API: OpenCL 1.0+
 
-## Ключевые особенности:
-- Тестирование вычислительных блоков в задачах FP16, FP32, FP64, а также целочисленных операций INT8, INT32 и INT64.
-Тест с использованием инструкций FMA (Fused Multiply-Add), MAD (Multiply–Add) и симуляция обработки изображений (Image Blur).
-- Измерение пропускной способности и задержек видеопамяти (VRAM Latency / Bandwidth).
-- Динамическая калибровка в зависимости от мощности устройства для достижения высокой точности замеров.
-- Автоматическое сохранение отчетов в текстовые файлы результатов.
+## Набор тестов (v1.1):
+- VRAM Bandwidth - пропускная способность памяти.
+- VRAM Latency - задержки случайного доступа памяти.
+- FP16-H8 - половинная точность (half8).
+- FP32-F8 - одинарная точность (float8).
+- FP32-FMA - одинарная точность с использованием инструкций FMA.
+- FP32-MAD - одинарная точность с использованием инструкций MAD.
+- FP64-D4 - двойная точность (double4).
+- INT8-U16 - целочисленный тест низкой точности (uchar16).
+- INT32-I4 - целочисленный тест обычной точности (int4).
+- INT64-L2 - целочисленный тест высокой точности (long2).
+- Image Blur - симуляция обработки графики в реальных задачах (1920x1080, Box Blur).
 
 <details>
   <summary>English translation</summary>
   
-Key features:
-- Testing of compute units using FP16, FP32, and FP64 workloads, as well as INT8, INT32, and INT64 integer operations.
-- Testing using FMA (Fused Multiply-Add), MAD (Multiply–Add) instructions and image processing simulation (Image Blur).
-- Measurement of VRAM bandwidth and latency.
-- Dynamic calibration based on device power to ensure high measurement accuracy.
-- Automatic saving of reports to text-based result files.
+Test suite (v1.1):
+- VRAM Bandwidth – memory bandwidth.
+- VRAM Latency – memory random-access latency.
+- FP16-H8 – half-precision (half8).
+- FP32-F8 – single-precision (float8).
+- FP32-FMA – single-precision using FMA (fused multiply-add) instructions.
+- FP32-MAD – single-precision using MAD (multiply-add) instructions.
+- FP64-D4 – double-precision (double4).
+- INT8-U16 – low-precision integer test (uchar16).
+- INT32-I4 – standard-precision integer test (int4).
+- INT64-L2 – high-precision integer test (long2).
+- Image Blur – simulation of graphics processing in real-world tasks (1920x1080, Box Blur).
 
 </details>
 
