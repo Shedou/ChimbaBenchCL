@@ -1,11 +1,11 @@
 # ChimbaBenchCL [![Github Releases](https://img.shields.io/github/downloads/Shedou/ChimbaBenchCL/total.svg)](https://github.com/Shedou/ChimbaBenchCL/releases)
 
-ChimbaBenchCL — это легковесный кроссплатформенный бенчмарк с открытым исходным кодом, предназначенный для измерения производительности центральных (CPU) и графических (GPU) процессоров с использованием стандарта OpenCL. Проект был создан при участии искусственного интеллекта (не является сгенерированным ИИ), о чем имеется соответствующая пометка в исходном коде. Использование ИИ позволило значительно ускорить процесс разработки проекта.
+ChimbaBenchCL — это легковесный кроссплатформенный бенчмарк с открытым исходным кодом, предназначенный для измерения производительности центральных (CPU) и графических (GPU) процессоров с использованием стандарта OpenCL. Проект был создан при участии искусственного интеллекта (не является полностью сгенерированным ИИ), о чем имеется соответствующая пометка в исходном коде. Использование ИИ позволило значительно ускорить процесс разработки проекта.
 
 <details>
   <summary>English translation</summary>
   
-ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed to measure the performance of central processing units (CPUs) and graphics processing units (GPUs) using the OpenCL standard. The project was created with the assistance of artificial intelligence (it is not AI-generated), a fact noted within the source code. The use of AI significantly accelerated the project's development process.
+ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed to measure the performance of central processing units (CPUs) and graphics processing units (GPUs) using the OpenCL standard. The project was created with the assistance of artificial intelligence (is not entirely AI-generated), a fact noted within the source code. The use of AI significantly accelerated the project's development process.
 
 </details>
 
