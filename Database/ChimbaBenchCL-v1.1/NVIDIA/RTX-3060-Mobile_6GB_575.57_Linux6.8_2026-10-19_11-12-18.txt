@@ -1,0 +1,53 @@
+ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : NVIDIA GeForce RTX 3060 Laptop GPU (GPU)
+ CL Info   : OpenCL 3.0 CUDA
+ HW Info   : CUs: 30, Mem: 5.67 GB (5801 MB), Freq (base): 1425 MHz
+ Cache Info: Cache Size: 840 KB, Line Size: 128 Bytes
+ Platform  : NVIDIA CUDA (575.57.08)
+ [System]  : Workload dynamically set to 3932160 elements based on 30 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  279.76 GB/s -  190.44 GB/s -  287.75 GB/s - 97.2%
+     64 MB :  304.41 GB/s -  268.59 GB/s -  309.13 GB/s - 98.5%
+    256 MB :  311.25 GB/s -  301.07 GB/s -  314.45 GB/s - 99.0%
+    512 MB :  311.90 GB/s -  307.32 GB/s -  315.34 GB/s - 98.9%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     282.88 ns     [   1.41s, Hops: 5000000, 64 MB]
+ FP16-H8   :   15363.70 GFLOPS (  15.36 TFLOPS) [1.49s, Iters.:  181752]
+ FP32-F8   :   13739.72 GFLOPS (  13.74 TFLOPS) [1.50s, Iters.:  163696]
+ FP32-FMA  :   13704.32 GFLOPS (  13.70 TFLOPS) [1.49s, Iters.:  162735]
+ FP32-MAD  :   13697.32 GFLOPS (  13.70 TFLOPS) [1.50s, Iters.:  162755]
+ FP64-D4   :     200.81 GFLOPS (   0.20 TFLOPS) [1.50s, Iters.:   19142]
+ INT8-U16  :   54278.33 GIOPS  (  54.28 TIOPS ) [1.50s, Iters.:  323485]
+ INT32-I4  :    9257.55 GIOPS  (   9.26 TIOPS ) [1.58s, Iters.:  310398]
+ INT64-L2  :    2255.66 GIOPS  (   2.26 TIOPS ) [1.55s, Iters.:  297265]
+ Img Blur  :  358784.63 MP/s   ( 358.78 GP/s  ) [1.47s, Iters.:  255175]
+
+ List of OpenCL Device Extensions:
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_fp64
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_icd
+cl_khr_gl_sharing
+cl_nv_compiler_options
+cl_nv_device_attribute_query
+cl_nv_pragma_unroll
+cl_nv_copy_opts
+cl_nv_create_buffer
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_device_uuid
+cl_khr_pci_bus_info
+cl_khr_external_semaphore
+cl_khr_external_memory
+cl_khr_external_semaphore_opaque_fd
+cl_khr_external_memory_opaque_fd
+cl_khr_semaphore
