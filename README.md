@@ -60,4 +60,4 @@ A typical benchmark run for a single device takes about 30 seconds. If the test 
 </details>
 
 ## Development/Build tools
-OpenCL-SDK and w64devkit: [https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools](https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools)
+OpenCL-SDK and w64devkit: [https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools-11](https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools-11)
