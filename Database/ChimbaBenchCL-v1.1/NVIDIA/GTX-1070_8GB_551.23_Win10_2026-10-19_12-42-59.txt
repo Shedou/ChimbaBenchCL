@@ -1,0 +1,55 @@
+ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : NVIDIA GeForce GTX 1070 (GPU)
+ CL Info   : OpenCL 3.0 CUDA
+ HW Info   : CUs: 15, Mem: 8.00 GB (8192 MB), Freq (base): 1873 MHz
+ Cache Info: Cache Size: 720 KB, Line Size: 128 Bytes
+ Platform  : NVIDIA CUDA (551.23)
+ [System]  : Workload dynamically set to 1966080 elements based on 15 CUs.
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  203.31 GB/s -  198.14 GB/s -  208.05 GB/s - 97.7%
+     64 MB :  210.09 GB/s -  141.85 GB/s -  214.87 GB/s - 97.8%
+    256 MB :  207.34 GB/s -  159.77 GB/s -  215.40 GB/s - 96.3%
+    512 MB :  210.81 GB/s -  180.24 GB/s -  215.40 GB/s - 97.9%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     220.36 ns     [   1.10s, Hops: 5000000, 64 MB]
+ FP16-H8   :     120.32 GFLOPS (   0.12 TFLOPS) [1.51s, Iters.:    2879]
+ FP32-F8   :    7307.82 GFLOPS (   7.31 TFLOPS) [1.50s, Iters.:  174713]
+ FP32-FMA  :    7299.81 GFLOPS (   7.30 TFLOPS) [1.50s, Iters.:  174564]
+ FP32-MAD  :    7304.96 GFLOPS (   7.30 TFLOPS) [1.47s, Iters.:  170735]
+ FP64-D4   :     239.67 GFLOPS (   0.24 TFLOPS) [1.46s, Iters.:   44603]
+ INT8-U16  :   28665.31 GIOPS  (  28.67 TIOPS ) [1.48s, Iters.:  336115]
+ INT32-I4  :    2737.40 GIOPS  (   2.74 TIOPS ) [1.49s, Iters.:  173040]
+ INT64-L2  :     484.58 GIOPS  (   0.48 TIOPS ) [1.50s, Iters.:  123092]
+ Img Blur  :  207295.36 MP/s   ( 207.30 GP/s  ) [1.50s, Iters.:  149596]
+
+ List of OpenCL Device Extensions:
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_fp64
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_icd
+cl_khr_gl_sharing
+cl_nv_compiler_options
+cl_nv_device_attribute_query
+cl_nv_pragma_unroll
+cl_nv_d3d10_sharing
+cl_khr_d3d10_sharing
+cl_nv_d3d11_sharing
+cl_nv_copy_opts
+cl_nv_create_buffer
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_device_uuid
+cl_khr_pci_bus_info
+cl_khr_external_semaphore
+cl_khr_external_memory
+cl_khr_external_semaphore_win32
+cl_khr_external_memory_win32
