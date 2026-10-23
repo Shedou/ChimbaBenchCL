@@ -17,7 +17,8 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 - GPU: 512 MB+ (GeForce 8000+ / Radeon HD 4000+ / Intel Gen7+)
 - API: OpenCL 1.0+
 
-## Набор тестов (v1.1):
+## Набор тестов (v1.2):
+- PCIe Bandwidth - пропускная способность шины PCI Express.
 - VRAM Bandwidth - пропускная способность памяти.
 - VRAM Latency - задержки случайного доступа памяти.
 - FP16-H8 - половинная точность (half8).
@@ -33,7 +34,8 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 <details>
   <summary>English translation</summary>
   
-Test suite (v1.1):
+Test suite (v1.2):
+- PCIe Bandwidth – the bandwidth of the PCI Express bus.
 - VRAM Bandwidth – memory bandwidth.
 - VRAM Latency – memory random-access latency.
 - FP16-H8 – half-precision (half8).
