@@ -195,6 +195,8 @@ void benchmark_device(cl_device_id device_id, const char* platform_name) {
                  total_elements, device_info_max_cu);
     
     // Модули тестов
+    
+    #include "bench_pcie.c"
     #include "bench_vram.c"
     #include "bench_latency.c"
     #include "bench_fp16_h8.c"
