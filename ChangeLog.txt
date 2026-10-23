@@ -1,11 +1,12 @@
 -= ChimbaBenchCL v1.2 =-
 Compiled: 2026-10-23
 Original binaries MD5 Hash:
-ChimbaBenchCL.exe - dd6c08cabda543e4ece6a8ba1c1ea1e1
-ChimbaBenchCL-FBSD - e71e5ec4530a6f6a229b79535da7cdef
-ChimbaBenchCL-Linux - 9f4fb90d76a926de9ee07b103da700f2
-ChimbaBenchCL-Linux-x86 - 857df25b0b6af18c86bd4e5ebe9cef47
-ChimbaBenchCL-x86.exe - b05bcc96cf1127c1a0f900ebb8ab7baf
+ChimbaBenchCL.exe - 2ff14c29d7f49d784029020ce89bc75f
+ChimbaBenchCL-FBSD - 58df866efd3953d6e578031d23f5ecde
+ChimbaBenchCL-Linux - 1192aaa8f003061fb16389d3a0155bbf
+ChimbaBenchCL-Linux-x86 - 8a6369c017d1837e030131ae54f333ec
+ChimbaBenchCL-x86.exe - 7b478b8b9e06c98387137ffd8c9e7da3
+- (перекомпилировано) убран размер блока 256 МБ, так как слишком долго тестировался на слабых системах (PCIe Bandwidth).
 - В наборе теперь как 32-битные версии, так и 64-битные.
 - Добавлен тест пропускной способности шины PCI Express.
 - Выведено время запуска бенчмарка и MD5-хэш исполняемого файла.
