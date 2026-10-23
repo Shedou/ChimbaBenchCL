@@ -64,9 +64,12 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
     #include <io.h>
     #include <direct.h>
     #define mkdir(dir) _mkdir(dir)
+    #include <conio.h> // для функции ожидания нажатия
 #else
     #include <sys/types.h>
     #include <unistd.h>
+    #include <termios.h> // для функции ожидания нажатия
+    #include <unistd.h> // для функции ожидания нажатия
 #endif
 
 #ifdef __APPLE__
@@ -86,6 +89,7 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 // ------------------------- //
 
 // Основной код находится в следующих файлах //
+#include "wait_key.c"
 #include "file.c"
 #include "md5.c"
 #include "benchmarks.c"
@@ -151,6 +155,7 @@ int main(int argc, char* argv[]) {
     cl_int ret = clGetPlatformIDs(0, NULL, &num_platforms);
     if (ret != CL_SUCCESS || num_platforms == 0) {
         print_report("Error: No OpenCL platforms found.\n");
+        wait_for_exit_key();
         return 1;
     }
     
@@ -176,7 +181,7 @@ int main(int argc, char* argv[]) {
         free(devices);
     }
     free(platforms);
-    printf("\nPress Enter to exit.\n");
-    char c; scanf("%c", &c); // Pause...
+    wait_for_exit_key();
+    //char c; scanf("%c", &c); // Pause...
     return 0;
 }
