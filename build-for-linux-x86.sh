@@ -8,8 +8,8 @@ fi
 
 gcc src/main.c -o "$OutputDir/ChimbaBenchCL-Linux-x86" \
   -DCL_TARGET_OPENCL_VERSION=100 \
-  -I./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-lin-Deb11-x86/include \
-  -L./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-lin-Deb11-x86/lib \
+  -I./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-Deb11-x86/include \
+  -L./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-Deb11-x86/lib \
   -lOpenCL
 
 if [ $? -eq 0 ]; then

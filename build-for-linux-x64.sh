@@ -8,8 +8,8 @@ fi
 
 gcc src/main.c -o "$OutputDir/ChimbaBenchCL-Linux" \
   -DCL_TARGET_OPENCL_VERSION=100 \
-  -I./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-CL-x64/include \
-  -L./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-CL-x64/lib \
+  -I./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-Deb11-x64/include \
+  -L./ChimbaBenchCL-Build-Tools/OpenCL-SDK-v2026.05.29-Lin-Deb11-x64/lib \
   -Wl,--wrap=__libc_start_main \
   -lOpenCL
 
