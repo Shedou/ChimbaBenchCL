@@ -91,7 +91,7 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 #include "benchmarks.c"
 // ----------------------------------------  //
 
-const char *ProjectName = "ChimbaBenchCL v1.1 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
+const char *ProjectName = "ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)\n";
 const char *ProjectLicense = "MIT License - (c) 2026 Андрей Цымбалов (Chimbal)\n";
 
 void help_function() {
@@ -145,7 +145,7 @@ int main(int argc, char* argv[]) {
     
     print_report(ProjectName);
     print_report(ProjectLicense);
-    print_report("Executable MD5: %s\n", exe_md5); // Выводим хэш в терминал и файл результатов
+    print_report("Executable MD5: %s - %04d-%02d-%02d %02d:%02d:%02d\n", exe_md5, tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec); // Выводим хэш в терминал и файл результатов
     
     cl_uint num_platforms;
     cl_int ret = clGetPlatformIDs(0, NULL, &num_platforms);
