@@ -2,7 +2,7 @@
 //Copyright (c) 2026 Андрей Цымбалов (Chimbal)
 
 {
-    const int pcie_sizes_mb[] = {16, 64, 256};
+    const int pcie_sizes_mb[] = {16, 64};
     const int num_pcie_sizes = sizeof(pcie_sizes_mb) / sizeof(pcie_sizes_mb[0]);
     const int num_runs = 50; 
     cl_int ret;
