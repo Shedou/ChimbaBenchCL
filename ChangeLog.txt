@@ -1,3 +1,24 @@
+-= ChimbaBenchCL v1.2 =-
+Compiled: 2026-10-23
+Original binaries MD5 Hash:
+ChimbaBenchCL.exe - dd6c08cabda543e4ece6a8ba1c1ea1e1
+ChimbaBenchCL-FBSD - e71e5ec4530a6f6a229b79535da7cdef
+ChimbaBenchCL-Linux - 9f4fb90d76a926de9ee07b103da700f2
+ChimbaBenchCL-Linux-x86 - 857df25b0b6af18c86bd4e5ebe9cef47
+ChimbaBenchCL-x86.exe - b05bcc96cf1127c1a0f900ebb8ab7baf
+- В наборе теперь как 32-битные версии, так и 64-битные.
+- Добавлен тест пропускной способности шины PCI Express.
+- Выведено время запуска бенчмарка и MD5-хэш исполняемого файла.
+- Доработана функция паузы (теперь можно закрыть окно на паузе клавишей Escapе).
+- Создана первая иконка.
+
+-= ChimbaBenchCL v1.1 x86 version =-
+Compiled: 2026-10-19
+Original binaries MD5 Hash:
+ChimbaBenchCL-Linux-x86 - 8607351eba47b3ba43d1967dd67b84d0
+ChimbaBenchCL-x86.exe - d5c4293681d81c217e7f919261b20c10
+- OpenCL Benchmark заменено на x86 version в приветствии.
+
 -= ChimbaBenchCL v1.1 =-
 Compiled: 2026-10-17
 Original binaries MD5 Hash:
