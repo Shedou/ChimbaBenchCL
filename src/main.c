@@ -87,6 +87,7 @@ int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char 
 
 // Основной код находится в следующих файлах //
 #include "file.c"
+#include "md5.c"
 #include "benchmarks.c"
 // ----------------------------------------  //
 
@@ -122,6 +123,9 @@ int main(int argc, char* argv[]) {
         if (strcmp(argv[i], "-disable-gpu-nvidia") == 0) { disable_gpu_nvidia = 1; }
     }
     
+    char exe_md5[33] = {0};
+    get_binary_md5(argv[0], exe_md5);
+    
     create_directory_if_not_exists("Results"); // Проверка каталога и его создание при отсутствии
     
     time_t t = time(NULL); // Получаение текущего системного времени
@@ -141,6 +145,7 @@ int main(int argc, char* argv[]) {
     
     print_report(ProjectName);
     print_report(ProjectLicense);
+    print_report("Executable MD5: %s\n", exe_md5); // Выводим хэш в терминал и файл результатов
     
     cl_uint num_platforms;
     cl_int ret = clGetPlatformIDs(0, NULL, &num_platforms);
