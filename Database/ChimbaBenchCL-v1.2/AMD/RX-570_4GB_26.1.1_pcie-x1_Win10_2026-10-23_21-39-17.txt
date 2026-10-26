@@ -1,0 +1,68 @@
+ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+Executable MD5: 2ff14c29d7f49d784029020ce89bc75f - 2026-10-23 21:39:17
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : Ellesmere (GPU)
+ CL Info   : OpenCL 2.0 AMD-APP (3584.0)
+ HW Info   : CUs: 32, Mem: 4.00 GB (4096 MB), Freq (base): 1256 MHz
+ Cache Info: Cache Size: 16 KB, Line Size: 64 Bytes
+ Platform  : AMD Accelerated Parallel Processing (3584.0 (PAL,HSAIL))
+ [System]  : Workload dynamically set to 4194304 elements based on 32 CUs.
+------------------------------- PCIe Bandwidth ---------------------------------
+ Block size:          avg -          min -          max - stability | 50 runs
+ PCIe Write:
+     16 MB :    0.36 GB/s -    0.36 GB/s -    0.36 GB/s - 100.0%
+     64 MB :    0.36 GB/s -    0.36 GB/s -    0.36 GB/s - 99.7%
+ PCIe Read:
+     16 MB :    0.43 GB/s -    0.43 GB/s -    0.43 GB/s - 100.0%
+     64 MB :    0.42 GB/s -    0.42 GB/s -    0.43 GB/s - 99.8%
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :  154.54 GB/s -  148.95 GB/s -  158.88 GB/s - 97.3%
+     64 MB :  165.36 GB/s -  161.38 GB/s -  169.67 GB/s - 97.5%
+    256 MB :  170.52 GB/s -  169.50 GB/s -  171.53 GB/s - 99.4%
+    512 MB :  171.46 GB/s -  170.80 GB/s -  172.26 GB/s - 99.5%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     322.64 ns     [   1.49s, Hops: 4624377, 64 MB]
+ FP16-H8   :    3841.07 GFLOPS (   3.84 TFLOPS) [1.59s, Iters.:   45360]
+ FP32-F8   :    2439.50 GFLOPS (   2.44 TFLOPS) [1.56s, Iters.:   28330]
+ FP32-FMA  :    1080.79 GFLOPS (   1.08 TFLOPS) [1.61s, Iters.:   12960]
+ FP32-MAD  :    2431.18 GFLOPS (   2.43 TFLOPS) [1.56s, Iters.:   28326]
+ FP64-D4   :     203.64 GFLOPS (   0.20 TFLOPS) [1.50s, Iters.:   18181]
+ INT8-U16  :      57.12 GIOPS  (   0.06 TIOPS ) [0.24s, Iters.:      51]
+ INT32-I4  :      10.64 GIOPS  (   0.01 TIOPS ) [0.24s, Iters.:      50]
+ INT64-L2  :      10.78 GIOPS  (   0.01 TIOPS ) [0.12s, Iters.:     101]
+ Img Blur  :   46550.30 MP/s   (  46.55 GP/s  ) [1.60s, Iters.:   35935]
+
+ List of OpenCL Device Extensions:
+cl_khr_fp64
+cl_amd_fp64
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_3d_image_writes
+cl_khr_byte_addressable_store
+cl_khr_fp16
+cl_khr_gl_sharing
+cl_amd_device_attribute_query
+cl_amd_vec3
+cl_amd_printf
+cl_amd_media_ops
+cl_amd_media_ops2
+cl_amd_popcnt
+cl_khr_d3d10_sharing
+cl_khr_d3d11_sharing
+cl_khr_dx9_media_sharing
+cl_khr_image2d_from_buffer
+cl_khr_subgroups
+cl_khr_gl_event
+cl_khr_depth_images
+cl_khr_mipmap_image
+cl_khr_mipmap_image_writes
+cl_amd_copy_buffer_p2p
+cl_amd_planar_yuv

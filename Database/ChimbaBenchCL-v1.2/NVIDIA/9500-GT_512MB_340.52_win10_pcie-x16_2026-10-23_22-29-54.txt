@@ -1,0 +1,51 @@
+ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+Executable MD5: 2ff14c29d7f49d784029020ce89bc75f - 2026-10-23 22:29:54
+OpenCL platforms detected: 1
+
+================================================================================
+ Device    : GeForce 9500 GT (GPU)
+ CL Info   : OpenCL 1.0 CUDA
+ HW Info   : CUs: 4, Mem: 0.50 GB (512 MB), Freq (base): 1375 MHz
+ Cache Info: Cache Size: 0 KB, Line Size: 0 Bytes
+ Platform  : NVIDIA CUDA (340.52)
+ [System]  : Workload dynamically set to 524288 elements based on 4 CUs.
+------------------------------- PCIe Bandwidth ---------------------------------
+ Block size:          avg -          min -          max - stability | 50 runs
+ PCIe Write:
+     16 MB :    1.76 GB/s -    1.65 GB/s -    1.96 GB/s - 90.1%
+     64 MB :    1.82 GB/s -    1.69 GB/s -    1.95 GB/s - 93.4%
+ PCIe Read:
+     16 MB :    1.87 GB/s -    1.51 GB/s -    1.99 GB/s - 94.3%
+     64 MB :    1.75 GB/s -    1.61 GB/s -    1.89 GB/s - 92.3%
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :    5.00 GB/s -    4.75 GB/s -    5.31 GB/s - 94.3%
+     64 MB :    4.80 GB/s -    4.68 GB/s -    4.91 GB/s - 97.7%
+    256 MB :    4.72 GB/s -    4.59 GB/s -    4.76 GB/s - 99.2%
+  [Size 512 MB] Error enqueuing kernel on run 0 (Code: -4)
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :    1141.24 ns     [   1.49s, Hops: 1303651, 64 MB]
+ FP16-H8   : Compilation/Buffer error (-45).
+ FP32-F8   :      62.45 GFLOPS (   0.06 TFLOPS) [0.13s, Iters.:     491]
+ FP32-FMA  :       0.75 GFLOPS (   0.00 TFLOPS) [1.38s, Iters.:      62]
+ FP32-MAD  :      62.45 GFLOPS (   0.06 TFLOPS) [0.14s, Iters.:     503]
+ FP64-D4   : Skipped (Extension not supported).
+ INT8-U16  :      65.67 GIOPS  (   0.07 TIOPS ) [0.12s, Iters.:     236]
+ INT32-I4  :      17.57 GIOPS  (   0.02 TIOPS ) [1.48s, Iters.:    4129]
+ INT64-L2  :       4.64 GIOPS  (   0.00 TIOPS ) [1.49s, Iters.:    4391]
+ Img Blur  :     149.49 MP/s   (   0.15 GP/s  ) [1.57s, Iters.:     113]
+
+ List of OpenCL Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_icd
+cl_khr_gl_sharing
+cl_nv_d3d9_sharing
+cl_nv_d3d10_sharing
+cl_khr_d3d10_sharing
+cl_nv_d3d11_sharing
+cl_nv_compiler_options
+cl_nv_device_attribute_query
+cl_nv_pragma_unroll
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
