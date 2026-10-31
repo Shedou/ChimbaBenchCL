@@ -36,8 +36,7 @@ Additional launch parameters can be found by running the program with the `-help
 - VRAM Latency - задержки случайного доступа памяти.
 - FP16-H8 - половинная точность (half8).
 - FP32-F8 - одинарная точность (float8).
-- FP32-FMA - одинарная точность с использованием инструкций FMA.
-- FP32-MAD - одинарная точность с использованием инструкций MAD.
+- FP32-FMA / FP32-MAD - одинарная точность с использованием инструкций FMA и MAD.
 - FP64-D4 - двойная точность (double4).
 - INT8-U16 - целочисленный тест низкой точности (uchar16).
 - INT32-I4 - целочисленный тест обычной точности (int4).
@@ -52,8 +51,7 @@ Additional launch parameters can be found by running the program with the `-help
 - VRAM Latency – memory random-access latency.
 - FP16-H8 – half-precision (half8).
 - FP32-F8 – single-precision (float8).
-- FP32-FMA – single-precision using FMA (fused multiply-add) instructions.
-- FP32-MAD – single-precision using MAD (multiply-add) instructions.
+- FP32-FMA / FP32-MAD – single-precision using FMA (fused multiply-add) and MAD (multiply-add) instructions.
 - FP64-D4 – double-precision (double4).
 - INT8-U16 – low-precision integer test (uchar16).
 - INT32-I4 – standard-precision integer test (int4).
