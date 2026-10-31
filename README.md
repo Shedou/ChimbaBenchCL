@@ -9,7 +9,7 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 
 </details>
 
-## Использование
+## Usage / Использование
 
 Распаковать [актуальный официальный архив с программой](https://github.com/Shedou/ChimbaBenchCL/releases/tag/CBCL_12) и запустить подходящую версию исполняемого файла для Linux, Windows или FreeBSD.
 
@@ -24,17 +24,13 @@ Additional launch parameters can be found by running the program with the `-help
 
 </details>
 
-## Screenshoot
-
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/Shedou/ChimbaBenchCL/blob/main/Screenshot.jpg" />
-
 ## System requirements:
 - OS: 64-bit (x86_64) - Windows 7+, Linux (GLIBC 2.7+), FreeBSD
 - OS: 32-bit (x86) - Windows XP+, Linux (GLIBC 2.7+)
 - GPU: 512 MB+ (GeForce 8000+ / Radeon HD 4000+ / Intel Gen7+)
 - API: OpenCL 1.0+
 
-## Набор тестов (v1.2):
+## Test Suite / Набор тестов (v1.2):
 - PCIe Bandwidth - пропускная способность шины PCI Express.
 - VRAM Bandwidth - пропускная способность памяти.
 - VRAM Latency - задержки случайного доступа памяти.
@@ -51,7 +47,6 @@ Additional launch parameters can be found by running the program with the `-help
 <details>
   <summary>English translation</summary>
   
-Test suite (v1.2):
 - PCIe Bandwidth – the bandwidth of the PCI Express bus.
 - VRAM Bandwidth – memory bandwidth.
 - VRAM Latency – memory random-access latency.
@@ -66,6 +61,10 @@ Test suite (v1.2):
 - Image Blur – simulation of graphics processing in real-world tasks (1920x1080, Box Blur).
 
 </details>
+
+## Screenshoot
+
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/Shedou/ChimbaBenchCL/blob/main/Screenshot.jpg" />
 
 ## Примечание:
 Нормальное время прохождения бенчмарка для одного устройства — около 20-30 секунд. Если тест длится слишком долго, возможно, у вас Intel UHD 600 под управлением Linux. В таком случае вы можете отключить проблемное устройство, используя команды `-disable-gpu-intel` и подобные. Узнать список команд можно, запустив программу с аргументом `-help` или `--help`.
