@@ -24,10 +24,6 @@ Additional launch parameters can be found by running the program with the `-help
 
 </details>
 
-## Компизяция из исходного кода
-
-Инструкция по компиляции из исходного кода: Будет позже...
-
 ## Screenshoot
 
 <img width="1920" height="1080" alt="Screenshot" src="https://github.com/Shedou/ChimbaBenchCL/blob/main/Screenshot.jpg" />
@@ -81,6 +77,12 @@ Note:\
 A typical benchmark run for a single device takes about 30 seconds. If the test takes significantly longer, you might be using an Intel UHD 600 GPU on Linux. In such cases, you can disable the problematic device using commands like `-disable-gpu-intel` (or similar). You can view a list of available commands by running the program with the `-help` or `--help` argument.
 
 </details>
+
+## Компизяция из исходного кода
+
+Инструкция по компиляции из исходного кода: Будет позже...
+
+
 
 ## Development/Build tools
 OpenCL-SDK and w64devkit: [https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools-11](https://github.com/Shedou/ChimbaBenchCL/releases/tag/ChimbaBenchCL-Build-Tools-11)
