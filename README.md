@@ -2,14 +2,12 @@
 
 ChimbaBenchCL — это легковесный кроссплатформенный бенчмарк с открытым исходным кодом, предназначенный для измерения производительности центральных (CPU) и графических (GPU) процессоров с использованием стандарта OpenCL. Проект был создан при участии искусственного интеллекта (не является полностью сгенерированным ИИ), о чем имеется соответствующая пометка в исходном коде. Использование ИИ позволило значительно ускорить процесс разработки проекта.
 
-ChimbaBenchCL с первой версии [доказал, что является лучшим бенчмарком](https://overclockers.ru/blog/Hard-Workshop/show/266312/O-diskriminacii-v-Open-Source-na-primere-sravneniya-ChimbaBenchCL-s-prochimi-benchmarkami) с открытым исходным кодом среди протестированных.
+Инструкция по компиляции из исходного кода: Будет позже...
 
 <details>
   <summary>English translation</summary>
   
 ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed to measure the performance of central processing units (CPUs) and graphics processing units (GPUs) using the OpenCL standard. The project was created with the assistance of artificial intelligence (is not entirely AI-generated), a fact noted within the source code. The use of AI significantly accelerated the project's development process.
-
-From its very first version, [ChimbaBenchCL has proven to be the best open-source benchmark](https://overclockers.ru/blog/Hard-Workshop/show/266312/O-diskriminacii-v-Open-Source-na-primere-sravneniya-ChimbaBenchCL-s-prochimi-benchmarkami) among those tested.
 
 </details>
 
