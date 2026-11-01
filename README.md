@@ -11,14 +11,14 @@ ChimbaBenchCL is a lightweight, cross-platform, open-source benchmark designed t
 
 ## Usage / Использование
 
-Распаковать [актуальный официальный архив с программой](https://github.com/Shedou/ChimbaBenchCL/releases/tag/CBCL_12) и запустить подходящую версию исполняемого файла для Linux, Windows или FreeBSD.
+Распаковать [актуальный официальный архив с программой](https://github.com/Shedou/ChimbaBenchCL/releases/tag/CBCL_12) и запустить подходящую версию исполняемого файла для Linux, Windows или FreeBSD. Результаты тестирования будут сохраняться в файл внутри каталога `Results`, рядом с исполняемым файлом.
 
 Дополнительные параметры запуска можно узнать запустив программу с аргументом `-help` или `--help` (ChimbaBenchCL v1.1+). Параметры могут меняться в зависимости от версии бенчмарка.
 
 <details>
   <summary>English translation</summary>
 
-Unpack the [latest official archive containing the program](https://github.com/Shedou/ChimbaBenchCL/releases/tag/CBCL_12) and run the appropriate version of the executable file for Linux, Windows, or FreeBSD.
+Unpack the [latest official archive containing the program](https://github.com/Shedou/ChimbaBenchCL/releases/tag/CBCL_12) and run the appropriate version of the executable file for Linux, Windows, or FreeBSD. Test results will be saved to a file within the `Results` directory, located next to the executable file.
 
 Additional launch parameters can be found by running the program with the `-help` or `--help` argument (ChimbaBenchCL v1.1+). The available parameters may vary depending on the version of the benchmark.
 
