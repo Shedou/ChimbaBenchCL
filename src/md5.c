@@ -16,6 +16,9 @@ void get_binary_md5(const char* exec_path, char* out_md5) {
     strcpy(out_md5, "UNKNOWN/ERROR");
     
     FILE* f = fopen(exec_path, "rb");
+#ifdef __linux__
+    if (!f) f = fopen("/proc/self/exe", "rb");
+#endif
     if (!f) return;
     
     // Определяем размер файла
