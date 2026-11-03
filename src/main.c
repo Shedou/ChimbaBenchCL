@@ -41,7 +41,7 @@
 // ==============================================================================
 
 // Костыль для Linux, понижающий требования к версии злополучного GLIBC //
-#ifdef __linux__
+#if defined(__linux__) && !defined(CBCL_USE_SYSTEM_GLIBC)
 extern int __real___libc_start_main(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end);
 __asm__(".symver __real___libc_start_main,__libc_start_main@GLIBC_2.2.5");
 int __wrap___libc_start_main(int (*main)(int, char **, char **), int argc, char **ubp_av, void (*init)(void), void (*fini)(void), void (*rtld_fini)(void), void *stack_end) {
