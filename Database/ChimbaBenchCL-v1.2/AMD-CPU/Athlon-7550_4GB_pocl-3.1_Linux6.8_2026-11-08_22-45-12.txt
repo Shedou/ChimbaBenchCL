@@ -1,0 +1,50 @@
+ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+Executable MD5: 1192aaa8f003061fb16389d3a0155bbf - 2026-11-08 22:45:12
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : pthread-athlon64-AMD Athlon(tm) 7550 Dual-Core Processor (CPU)
+ CL Info   : OpenCL 3.0 PoCL HSTR: pthread-x86_64-pc-linux-gnu-athlon64
+ HW Info   : CUs: 2, Mem: 2.87 GB (2941 MB), Freq (base): 2500 MHz
+ Cache Info: Cache Size: 2048 KB, Line Size: 64 Bytes
+ Platform  : Portable Computing Language (3.1+debian)
+ [System]  : Workload dynamically set to 262144 elements based on 2 CUs.
+------------------------------- PCIe Bandwidth ---------------------------------
+ Block size:          avg -          min -          max - stability | 50 runs
+ PCIe Write:
+     16 MB :    3.60 GB/s -    2.51 GB/s -    3.72 GB/s - 96.8%
+     64 MB :    3.51 GB/s -    3.05 GB/s -    3.57 GB/s - 98.5%
+ PCIe Read:
+     16 MB :    1.93 GB/s -    1.64 GB/s -    1.94 GB/s - 99.6%
+     64 MB :    1.91 GB/s -    1.64 GB/s -    1.94 GB/s - 98.5%
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :    4.03 GB/s -    2.95 GB/s -    5.74 GB/s - 70.2%
+     64 MB :    4.16 GB/s -    3.55 GB/s -    5.73 GB/s - 72.6%
+    256 MB :    4.82 GB/s -    3.56 GB/s -    5.70 GB/s - 84.5%
+    512 MB :    4.87 GB/s -    3.56 GB/s -    5.70 GB/s - 85.5%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     117.74 ns     [   0.59s, Hops: 5000000, 64 MB]
+ FP16-H8   : Skipped (Extension not supported).
+ FP32-F8   :       9.70 GFLOPS (   0.01 TFLOPS) [0.61s, Iters.:     707]
+ FP32-FMA  :       0.09 GFLOPS (   0.00 TFLOPS) [1.44s, Iters.:      16]
+ FP32-MAD  :       9.86 GFLOPS (   0.01 TFLOPS) [0.60s, Iters.:     704]
+ FP64-D4   :       4.88 GFLOPS (   0.00 TFLOPS) [1.49s, Iters.:    6949]
+ INT8-U16  :      19.70 GIOPS  (   0.02 TIOPS ) [0.70s, Iters.:     817]
+ INT32-I4  :       3.50 GIOPS  (   0.00 TIOPS ) [0.69s, Iters.:     765]
+ INT64-L2  :       1.43 GIOPS  (   0.00 TIOPS ) [0.58s, Iters.:    1064]
+ Img Blur  :     151.45 MP/s   (   0.15 GP/s  ) [1.14s, Iters.:      83]
+
+ List of OpenCL Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_3d_image_writes
+cl_khr_command_buffer
+cl_khr_spir
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_fp64
