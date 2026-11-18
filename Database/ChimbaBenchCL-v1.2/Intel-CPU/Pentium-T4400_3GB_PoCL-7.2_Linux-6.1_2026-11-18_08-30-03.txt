@@ -1,0 +1,71 @@
+ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.com/Shedou/ChimbaBenchCL)
+MIT License - (c) 2026 Андрей Цымбалов (Chimbal)
+Executable MD5: 1192aaa8f003061fb16389d3a0155bbf - 2026-11-18 08:30:03
+OpenCL platforms detected: 2
+
+================================================================================
+ Device    : cpu-core2-Pentium(R) Dual-Core CPU       T4400  @ 2.20GHz (CPU)
+ CL Info   : OpenCL 3.0 PoCL HSTR: cpu-x86_64-pc-linux-gnu-core2
+ HW Info   : CUs: 2, Mem: 2.18 GB (2228 MB), Freq (base): 2200 MHz
+ Cache Info: Cache Size: 1024 KB, Line Size: 64 Bytes
+ Platform  : Portable Computing Language (7.2)
+ [System]  : Workload dynamically set to 262144 elements based on 2 CUs.
+------------------------------- PCIe Bandwidth ---------------------------------
+ Block size:          avg -          min -          max - stability | 50 runs
+ PCIe Write:
+     16 MB :    1.32 GB/s -    1.31 GB/s -    1.33 GB/s - 99.3%
+     64 MB :    1.36 GB/s -    1.35 GB/s -    1.36 GB/s - 99.8%
+ PCIe Read:
+     16 MB :    1.50 GB/s -    1.49 GB/s -    1.51 GB/s - 99.5%
+     64 MB :    1.35 GB/s -    1.29 GB/s -    1.35 GB/s - 99.7%
+------------------------------- VRAM Bandwidth ---------------------------------
+ VRAM size :          avg -          min -          max - stability | 50 runs
+     16 MB :    1.44 GB/s -    1.32 GB/s -    1.52 GB/s - 94.6%
+     64 MB :    1.45 GB/s -    1.31 GB/s -    1.59 GB/s - 91.1%
+    256 MB :    1.53 GB/s -    1.35 GB/s -    1.57 GB/s - 97.1%
+    512 MB :    1.59 GB/s -    1.42 GB/s -    1.64 GB/s - 97.2%
+------------------------------ Compute Benchmarks ------------------------------
+ VRAM Lat. :     152.79 ns     [   0.76s, Hops: 5000000, 64 MB]
+ FP16-H8   :       0.03 GFLOPS (   0.00 TFLOPS) [1.44s, Iters.:       5]
+ FP32-F8   :      16.23 GFLOPS (   0.02 TFLOPS) [0.62s, Iters.:    1196]
+ FP32-FMA  :       0.06 GFLOPS (   0.00 TFLOPS) [1.47s, Iters.:      10]
+ FP32-MAD  :      16.15 GFLOPS (   0.02 TFLOPS) [0.84s, Iters.:    1621]
+ FP64-D4   :       7.39 GFLOPS (   0.01 TFLOPS) [1.36s, Iters.:    9586]
+ INT8-U16  :      14.10 GIOPS  (   0.01 TIOPS ) [0.84s, Iters.:     706]
+ INT32-I4  :       7.26 GIOPS  (   0.01 TIOPS ) [0.97s, Iters.:    2234]
+ INT64-L2  :       2.23 GIOPS  (   0.00 TIOPS ) [1.25s, Iters.:    3538]
+ Img Blur  :     174.46 MP/s   (   0.17 GP/s  ) [2.02s, Iters.:     170]
+
+ List of OpenCL Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_3d_image_writes
+cl_intel_unified_shared_memory
+cl_ext_buffer_device_address
+cl_khr_device_uuid
+cl_khr_suggested_local_work_size
+cl_khr_integer_dot_product
+cl_ext_float_atomics
+cl_pocl_svm_rect
+cl_pocl_command_buffer_svm
+cl_khr_command_buffer
+cl_khr_command_buffer_multi_device
+cl_khr_command_buffer_mutable_dispatch
+cl_pocl_command_buffer_host_buffer
+cl_exp_defined_builtin_kernels
+cl_khr_subgroups
+cl_khr_subgroup_ballot
+cl_khr_subgroup_shuffle
+cl_intel_subgroups
+cl_intel_subgroups_short
+cl_intel_subgroups_char
+cl_intel_required_subgroup_size
+cl_exp_tensor
+cl_khr_fp16
+cl_khr_fp64
+cl_khr_kernel_clock
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
