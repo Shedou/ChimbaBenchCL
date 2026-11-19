@@ -29,7 +29,6 @@ const char *kernel_fp64_safe_src =
 // FP64 double4
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     if (ext_fp64_present != 1) {
         print_report(" FP64-D4   : Skipped (Extension not supported).\n");
     } else {

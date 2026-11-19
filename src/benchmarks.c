@@ -59,6 +59,9 @@ int calibrate_kernel_iterations(cl_command_queue command_queue, cl_kernel kernel
 void benchmark_device(cl_device_id device_id, const char* platform_name) {
     cl_int ret;
     
+    // Настройки для модулей бенчмарков
+    const double TARGET_BENCHMARK_TIME = 1.5; // Старые драйверы видеокарт могут зависать и восстанавливаться при длительности тестов более 2.0 секунд.
+    
     // Сбор базовой информации о тестируемом устройстве
     char device_name[256] = {0}; char driver_version[256] = {0}; char device_info_cl_ver[256] = {0};
     int device_info_max_cu = 0; int device_info_max_clock = 0;

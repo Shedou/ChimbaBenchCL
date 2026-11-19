@@ -49,7 +49,6 @@ const char *kernel_uchar16_safe_src =
 // INT8 uchar16
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     size_t bytes = total_elements * sizeof(unsigned char) * 16; 
     
     unsigned char *h_data = NULL;

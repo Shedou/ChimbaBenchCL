@@ -66,7 +66,6 @@ const char *kernel_fp32_mad_src =
 // FP32 float8 FMA
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     size_t bytes = total_elements * sizeof(float) * 8; 
     float *h_data = (float*)malloc(bytes);
     

@@ -31,8 +31,11 @@ const char *kernel_fp32_float8_safe_src =
 "    data[base_idx + 6] = v6; data[base_idx + 7] = v7;\n"
 "}\n";
 
+
+// ------------------------------------------
+// FP32 float8
+// ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     size_t bytes = total_elements * sizeof(float) * 8; 
     float *h_data = (float*)malloc(bytes);
     

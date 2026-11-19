@@ -19,8 +19,6 @@ const char *kernel_int64_src =
 // INT64 long2
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
-    
     size_t global_size = total_elements / 2;
     size_t bytes = global_size * sizeof(cl_long) * 2; 
     

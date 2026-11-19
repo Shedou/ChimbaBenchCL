@@ -18,7 +18,6 @@ const char *kernel_int32_src =
 // INT32 int4
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     size_t bytes = total_elements * sizeof(int) * 4; 
     
     int *h_data = NULL;

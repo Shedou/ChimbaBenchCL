@@ -99,17 +99,16 @@ const char *ProjectName = "ChimbaBenchCL v1.2 (OpenCL Benchmark, https://github.
 const char *ProjectLicense = "MIT License - (c) 2026 Андрей Цымбалов (Chimbal)\n";
 
 void help_function() {
-	printf(ProjectName);
-	printf(ProjectLicense);
-	printf("\nTo disable the CPU/GPU, use the following arguments:\n");
-	printf("-disable-cpu: Skip CPU testing.\n");
-	printf("-disable-gpu: Skip testing on all GPUs.\n");
-	printf("-disable-gpu-amd: Skip testing on AMD GPUs only.\n");
-	printf("-disable-gpu-intel: Skip testing on Intel GPUs only.\n");
-	printf("-disable-gpu-nvidia: Skip testing on NVIDIA GPUs only.\n");
-	printf("\nPress Enter to exit.\n");
-	char c; scanf("%c", &c); // Pause...
-	exit(0); // Закрывает программу без возврата к функции main()...
+    printf(ProjectName);
+    printf(ProjectLicense);
+    printf("\nTo disable the CPU/GPU, use the following arguments:\n");
+    printf("-disable-cpu: Skip CPU testing.\n");
+    printf("-disable-gpu: Skip testing on all GPUs.\n");
+    printf("-disable-gpu-amd: Skip testing on AMD GPUs only.\n");
+    printf("-disable-gpu-intel: Skip testing on Intel GPUs only.\n");
+    printf("-disable-gpu-nvidia: Skip testing on NVIDIA GPUs only.\n");
+    wait_for_exit_key(); // Pause...
+    exit(0); // Закрывает программу без возврата к функции main()...
 }
 
 int main(int argc, char* argv[]) {
@@ -141,11 +140,7 @@ int main(int argc, char* argv[]) {
         tm.tm_hour, tm.tm_min, tm.tm_sec);
     report_file = fopen(filename, "w"); // Открытие файла для записи
     
-    if (report_file == NULL) {
-        printf("Warning: Failed to create the report file %s\n", filename);
-    }/* else {
-        printf("The results will be saved to a file: %s\n", filename);
-    }*/
+    if (report_file == NULL) { printf("Warning: Failed to create the report file %s\n", filename); }
     
     print_report(ProjectName);
     print_report(ProjectLicense);
@@ -155,7 +150,7 @@ int main(int argc, char* argv[]) {
     cl_int ret = clGetPlatformIDs(0, NULL, &num_platforms);
     if (ret != CL_SUCCESS || num_platforms == 0) {
         print_report("Error: No OpenCL platforms found.\n");
-        wait_for_exit_key();
+        wait_for_exit_key(); // Pause...
         return 1;
     }
     
@@ -181,7 +176,6 @@ int main(int argc, char* argv[]) {
         free(devices);
     }
     free(platforms);
-    wait_for_exit_key();
-    //char c; scanf("%c", &c); // Pause...
+    wait_for_exit_key(); // Pause...
     return 0;
 }

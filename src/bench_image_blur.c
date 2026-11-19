@@ -25,8 +25,6 @@ const char *kernel_blur_fixed_src =
 "}\n";
 
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
-    
     const int width = 1920;
     const int height = 1080;
     size_t global_size = (size_t)width * (size_t)height;

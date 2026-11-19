@@ -22,7 +22,6 @@ const char *kernel_fp16_h8_src =
 // FP16 half8
 // ------------------------------------------
 {
-    const double TARGET_BENCHMARK_TIME = 1.5;
     if (ext_fp16_present != 1) {
         print_report(" FP16-H8   : Skipped (Extension not supported).\n");
     } else {
